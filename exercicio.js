@@ -22,6 +22,14 @@ console.log("A estrutura do 1.o objeto:");
 console.log(apps[0]);
 
 // EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
+function calculateTotalInstallations(acc, app) {
+  acc += app.installs;
+  return acc;
+}
+
+const totalInstallations = apps.reduce(calculateTotalInstallations, 0);
+console.log("totalInstallations", totalInstallations);
+console.log("===============================================================");
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4)
 
