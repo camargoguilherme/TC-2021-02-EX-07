@@ -32,5 +32,14 @@ console.log("totalInstallations", totalInstallations);
 console.log("===============================================================");
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4)
+function filterAppWithScoreGreaterThanFor(app) {
+  return app.score > 4.0;
+}
+
+const appsWithScoreGreaterThanFor = apps.filter(
+  filterAppWithScoreGreaterThanFor
+);
+console.log("appsWithScoreGreaterThanFor", appsWithScoreGreaterThanFor);
+console.log("===============================================================");
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
